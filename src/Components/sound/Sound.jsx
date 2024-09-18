@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react';
 import './Sound_styles.css';
 
-import soundOnImg from '../../assets/sound/soundOn.webp';
-import soundOffImg from '../../assets/sound/soundOff.webp';
+import { Volume2 } from 'lucide-react';
+import { VolumeX } from 'lucide-react';
 
 import useSound from 'use-sound'; // Importamos el hook useSound
 import buttonSound from '../../assets/sound/SoundButtonClicked.wav'; // Importamos el sonido del botón azul
@@ -41,7 +41,7 @@ function Sound({isPlaying, sound, setSound}){
                     <div className='sound-button-bar-fill' ><p>{style === 'flex-start' ? 'On' : 'Off'}</p></div>
                 </div>
             </button>
-            <img className='sound-icon' src={style === 'flex-start' ? soundOnImg : soundOffImg} alt={style === 'flex-start' ? 'Sonido Activo' : 'Sonido Mute'}/>
+            {style === 'flex-start' ? <Volume2/> : <VolumeX/>}
         </div>
     )
 }

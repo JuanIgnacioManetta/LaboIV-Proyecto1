@@ -10,7 +10,7 @@ function BoardButton({color ,handlePlayerPick, isActive, difficulty}){
         if (isActive) {
           setActiveClass('active');
           console.log(activeClass)
-          setTimeout(() => setActiveClass(''), 600 / difficulty); // Duración de la animación
+          setTimeout(() => setActiveClass(''), 600 / difficulty);
         }
     }, [isActive]);
 

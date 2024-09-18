@@ -81,6 +81,7 @@ function Board({gameSequence, setGameSequence, isPlaying, setIsPlaying, difficul
     useEffect(() => {
       let i = 0;
         const interval = setInterval(() => {
+          stopSound(gameSequence[i]); // Parar el sonido del botón
           setActiveButton('')
           setTimeout(() => {
             setActiveButton(gameSequence[i]); // Cambiar el color activo

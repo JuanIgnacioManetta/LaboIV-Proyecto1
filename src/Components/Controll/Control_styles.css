@@ -7,17 +7,18 @@
     padding: 10px 0;
 }
 
-.controll-dificulty{
+.controll-difficulty{
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 10px;
 }
 
-.dificulty-easy,
-.dificulty-medium,
-.dificulty-hard,
-.dificulty-expert{
+
+.difficulty-easy,
+.difficulty-medium,
+.difficulty-hard,
+.difficulty-expert{
     width: 80px;
     height: auto;
     padding: 5px 10px;
@@ -27,7 +28,7 @@
     transition: scale 0.3s; 
 }
 
-.controlle-dificulty-buttons{
+.controll-difficulty-buttons{    
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -35,25 +36,25 @@
     gap: 10px;
 }
 
-.controll-dificulty span{
+.controll-difficulty span{
     font-size: 1em;
     font-weight: bold;
     color: #000;
 }
 
-.dificulty-easy{
+.difficulty-easy{
     background-color: #00ff00e1;
 }
 
-.dificulty-medium{
+.difficulty-medium{
     background-color: #ffcc00e1;
 }
 
-.dificulty-hard{
+.difficulty-hard{
     background-color: #ff6600e1;
 }
 
-.dificulty-expert{
+.difficulty-expert{
     background-color: #ff0000e1;
 }
 
@@ -76,10 +77,10 @@
     transition: scale 0.3s;
 }
 
-.dificulty-easy:hover,
-.dificulty-medium:hover,
-.dificulty-hard:hover,
-.dificulty-expert:hover,
+.difficulty-easy:hover,
+.difficulty-medium:hover,
+.difficulty-hard:hover,
+.difficulty-expert:hover,
 .controll-game button:hover{
     scale: 1.1;
 }
@@ -110,7 +111,7 @@
   }
   
   @media (max-width: 600px) {
-    .controll-dificulty-buttons{
+    .controll-difficulty-buttons{
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 5px;

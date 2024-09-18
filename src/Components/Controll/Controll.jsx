@@ -41,14 +41,14 @@ function Controll({setGameSequence, isPlaying, setIsPlaying, gameOver, setGameOv
 
     return(
         <div className='controll'>
-            <div className='controll-dificulty'>
-                <div className='controll-dificulty-buttons'>
-                    <button className='dificulty-easy' onClick={() => handleDificulty('easy')} disabled={buttonActive}><span>Facil</span></button>
-                    <button className='dificulty-medium' onClick={() => handleDificulty('medium')} disabled={buttonActive}><span>Medio</span></button>
-                    <button className='dificulty-hard' onClick={() => handleDificulty('hard')} disabled={buttonActive}><span>Dificil</span></button>
-                    <button className='dificulty-expert' onClick={() => handleDificulty('expert')} disabled={buttonActive}><span>Experto</span></button>
+            <div className='controll-difficulty'>
+                <div className='controll-difficulty-buttons'>
+                    <button className='difficulty-easy' onClick={() => handleDificulty('easy')} disabled={buttonActive}><span>Facil</span></button>
+                    <button className='difficulty-medium' onClick={() => handleDificulty('medium')} disabled={buttonActive}><span>Medio</span></button>
+                    <button className='difficulty-hard' onClick={() => handleDificulty('hard')} disabled={buttonActive}><span>Dificil</span></button>
+                    <button className='difficulty-expert' onClick={() => handleDificulty('expert')} disabled={buttonActive}><span>Experto</span></button>
                 </div>
-                <div className='controll-dificulty-span'>
+                <div className='controll-difficulty-span'>
                     <span>Dificultad: {difficulty === 1 ? 'Facil' : difficulty === 2 ? 'Medio' : difficulty === 3 ? 'Dificil' : 'Experto'}</span>
                 </div>
             </div>
