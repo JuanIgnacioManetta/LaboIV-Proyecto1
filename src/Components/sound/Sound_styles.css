@@ -1,0 +1,78 @@
+.sound{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: fit-content;
+    margin: 10px 0 5px 0;
+    gap: 10px;
+}
+
+.sound span{
+    padding: 0;
+    margin: 0 10px 0 10px;
+}
+
+.sound-button{
+    display: flex;
+    cursor: pointer;
+    border-radius: 20px;
+    align-items: center;
+    padding: 0;
+    border: 1px solid #c0c0c0;
+}
+
+.sound-button-bar{
+    width: 50px;
+    height: 20px;
+    border-radius: 20px;
+    display: flex;
+    padding: 2px;
+    align-items: center;
+    border: 2px solid #ffffffad;
+    background-color: #4caf4f81;
+}
+
+.sound-button-bar-fill{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #4CAF50;
+    padding: 0;
+    margin: 0;
+}
+
+.sound-button-bar-fill p{
+    padding: 0;
+    margin: 0;
+    color: white;
+    font-size: 10px;
+}
+
+.sound-icon{
+    padding: 0;
+    margin: 0;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    object-fit: fill;
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+    .sound{
+        width: 70%;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .sound{
+        width: 90%;
+    }
+  }
+

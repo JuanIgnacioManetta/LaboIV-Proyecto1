@@ -1,0 +1,35 @@
+.header{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px 10px 20px;
+}
+
+.header h1{
+    font-size: 2em;
+    margin: 0;
+}
+
+.header p{
+    font-size: 1em;
+    margin: 0;
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+    .header h1{
+        font-size: 1.5em;
+    }
+    .header p{
+        font-size: 0.8em;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .header h1{
+        font-size: 1.5em;
+    }
+    .header p{
+        font-size: 0.8em;
+    }
+  }
