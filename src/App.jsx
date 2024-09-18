@@ -6,7 +6,7 @@ import Header from './Components/header/Header.jsx' // Importamos el componente 
 import Board from './Components/Tablero/Board.jsx' // Importamos el componente Board
 import Score from './Components/score/Score.jsx' // Importamos el componente Score
 import Sound from './Components/sound/Sound.jsx' // Importamos el componente Sound
-import Controll from './Components/controll/Controll.jsx'; // Importamos el componente Controll
+import Controll from './Components/Controll/Controll.jsx'; // Importamos el componente Controll
 
 function App() {
 
